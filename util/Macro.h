@@ -6,8 +6,6 @@
 //
 
 
-#ifndef HikingTravelers_Macro_h
-#define HikingTravelers_Macro_h
 #define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
 #ifdef DEBUG
 #define PTLOG(fmt, ...) NSLog((@"%s [Line %d] => \n  " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
@@ -15,7 +13,6 @@
 #else
 #define PTLOG(...)  ;
 #define PTPrintBaseLog	;
-#endif
 #endif
 
 #define UIColorFromRGB(rgbValue) \

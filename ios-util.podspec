@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ios-util"
   s.version      = "0.1"
-  s.summary      = "A short description of ios-util."
+  s.summary      = "some utils about ios develop"
 
   s.description  = <<-DESC
                    A longer description of ios-util in Markdown format.
@@ -90,7 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "util"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -129,7 +130,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
