@@ -58,4 +58,10 @@
     bottomBorder.backgroundColor = [UIColorFromRGB(0xcccccc) CGColor];
     [self.layer addSublayer:bottomBorder];
 }
+
+- (void)circular
+{
+    self.layer.masksToBounds = YES;
+    self.layer.cornerRadius = self.frame.size.width/2;
+}
 @end

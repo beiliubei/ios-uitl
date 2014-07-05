@@ -16,4 +16,5 @@
 - (void)rightBorder:(float)width;
 - (void)leftBorder:(float)width;
 - (void)bottomBorder:(float)width;
+- (void)circular;
 @end
